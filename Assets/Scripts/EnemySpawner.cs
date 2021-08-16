@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class SpawnPrefab : MonoBehaviour
+public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _prefabToSpawn;
+    [SerializeField] private Enemy _enemy;
     [SerializeField] private int _spawnPeriod;
 
     private Transform[] _spawnPoints;
@@ -26,7 +26,7 @@ public class SpawnPrefab : MonoBehaviour
 
         if (_passedTime >= _spawnPeriod)
         {
-            Instantiate(_prefabToSpawn, _spawnPoints[_currentSpawnPoint]);
+            Instantiate(_enemy, _spawnPoints[_currentSpawnPoint]);
             _passedTime = 0;
             _currentSpawnPoint++;
         }

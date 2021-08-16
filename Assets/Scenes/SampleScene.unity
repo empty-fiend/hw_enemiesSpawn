@@ -482,5 +482,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5f52594589b244888cb765a11c6c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabToSpawn: {fileID: 8704482574937176253, guid: 12a3a52db13208b408feff54f4b67c5c, type: 3}
+  _enemy: {fileID: 1971628860509006746, guid: 12a3a52db13208b408feff54f4b67c5c, type: 3}
   _spawnPeriod: 2
